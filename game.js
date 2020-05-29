@@ -2,6 +2,10 @@ let target;
 
 const humanGuessInput = document.getElementById('human-guess');
 
+if (humanGuessInput > 9 || humanGuessInput < 0) {
+    alert('Input must be between 0 and 9')
+}
+
 const roundNumberDisplay = document.getElementById('round-number');
 
 const computerGuessDisplay = document.getElementById('computer-guess');
